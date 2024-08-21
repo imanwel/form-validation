@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div
+      class="main"
+      style="
+        background-image: url(cloud.jpg);
+        background-size: cover;
+        background-position: center;
+      "
+    >
+      <form class="form">
+        <div class="header">
+          <h1>Login</h1>
+        </div>
+
+        <div id="userName" class="space">
+          <input
+            type="text"
+            class="formInput"
+            placeholder="Username or email"
+          />
+          <small class="empty">invalid</small>
+        </div>
+
+        <div id="userPassword" class="space">
+          <input type="password" class="passConfirm" placeholder="Password" />
+          <small class="empty">wrong password</small>
+        </div>
+
+        <div class="submitbtn"><button class="btn">Login</button></div>
+        <p>Don't have an account? <a href="/index.html">Register</a> here</p>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>

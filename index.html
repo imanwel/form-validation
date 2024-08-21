@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Validation</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="main">
+      <form class="form">
+        <div class="header">
+          <h1>Sign up here</h1>
+        </div>
+        <div id="firstName" class="space">
+          <input type="text" class="formInput" placeholder="Firstname" />
+          <small class="empty">error: enter your firstname</small>
+        </div>
+
+        <div id="lastName" class="space">
+          <input type="text" class="formInput" placeholder="Lastname" />
+          <small class="empty">error: enter your lastname</small>
+        </div>
+
+        <div id="userName" class="space">
+          <input type="text" class="formInput" placeholder="Username" />
+          <small class="empty">error: create a username</small>
+        </div>
+
+        <div id="userEmail" class="space">
+          <input type="email" class="formInput" placeholder="Email" />
+          <small class="empty">error</small>
+        </div>
+
+        <div id="userPassword" class="space">
+          <input type="password" class="passConfirm" placeholder="Password" />
+          <small class="empty">error</small>
+        </div>
+
+        <div id="confirmPassword" class="space">
+          <input
+            type="password"
+            class="formInput"
+            placeholder="Confirm password"
+          />
+          <small class="empty">error</small>
+        </div>
+        <div class="submitbtn"><button class="btn">Submit</button></div>
+        <p>Already have an account? <a href="/signIn.html">Sign in</a> here</p>
+      </form>
+    </div>
+    <script src="app.js"></script>
+  </body>
+</html>
